@@ -1,9 +1,17 @@
-class menu:
-    menu_name = ""
-    price = 0
-    quantity = 0
+class Manager:
+    country ="Kenya"
+    # constructor
+    def __init__(self, name, department):
+        # Instance variable
+        self.name = name
+        self.dpt = department
 
-    def __init__(self, name, price, quantity):
-        self.menu_name = name
-        self.price = price
-        self.quantity = quantity
+    # instance method access instance variable
+    def show(self):
+        print('Name:', self.name, 'Department:', self.dpt)
+
+# create first object
+print('Manager One')
+Catherine = Manager("Catherine", "ict")
+# call instance method
+Catherine.show()
